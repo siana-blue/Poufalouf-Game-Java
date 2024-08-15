@@ -1,0 +1,165 @@
+Version 1.5
+***********
+
+Ajout du son.
+
+Ajout de l'objet BOMBE.
+
+Ajout de l'eau sur la carte.
+
+Amélioration des performances : les collisions ne sont testées pour chaque objet qu'avec les objets situés sur les mêmes cases et les cases directement autour.
+
+Amélioration de la gestion des contrôle en combat.
+
+Version 1.4_04
+**************
+
+Ajout de l'utilisation d'objets en combat.
+
+Version 1.4_03
+**************
+
+Correction du bug de fin de combat.
+
+Version 1.4_02
+**************
+
+Ajout d'attaques.
+
+Amélioration de l'écran de combat.
+
+Version 1.4_01
+**************
+
+Amélioration des performances.
+
+Ajout des textes.
+
+Version 1.4 (communément appelée version RISOUL)
+***********
+
+Ajout du mode combat.
+
+Finalisation des projectiles.
+
+Nuages plus transparents.
+
+Version 1.3_03
+**************
+
+Déplacements plus fluides de Poufalouf : possibilité de maintenir une flèche enfoncée pendant que Poufalouf est à l'arrêt (blessé, etc...) pour qu'il redémarre aussitôt.
+
+Animations de Douni améliorées.
+
+Première version du laser de Poufalouf.
+
+Gestion des contrôles et des collisions centralisée dans le modèle.
+
+Version 1.3_02
+**************
+
+Ajout de Douni.
+
+Version 1.3_01
+**************
+
+Meilleure collision des barrières.
+
+Les coeurs ne peuvent pas être pris si la santé de Poufalouf est au maximum.
+
+Version 1.3 (autrement appelée version BLENDER)
+***********
+
+Ajout des mines, des coeurs et des blessures.
+
+Plus grande fluidité du déplacement de Poufalouf (possibilitéde relâcher une touche directionnelle tout en continuant d'avancer avec une autre).
+
+Meilleurs graphismes (Blender).
+
+Introduction des scripts d'animation.
+
+Version 1.2_01
+**************
+
+Modification des touches d'affichage des zones.
+
+Traitement des exceptions.
+
+Révision de la Javadoc.
+
+Révision du système d'animation et de gestion du comportement des objets.
+
+Version 1.2
+***********
+
+Ajout du saut.
+
+Forte augmentation de la vitesse de chargement.
+
+Amélioration des chaises.
+
+Réorganisation en profondeur du code et des packages.
+
+Réécriture de la javadoc.
+
+Version 1.1_02
+**************
+
+Correction du bug des chaises : appuyer sur ESPACE en dehors d'une chaise n'éjecte plus Poufalouf quand il monte sur l'une d'entre elles.
+
+Version 1.1_01
+**************
+
+Correction du bug des chaises (Poufalouf traversant les objets).
+
+Le brouillard défile.
+
+<Aspects techniques>
+
+Identifiants de textures supprimés au profit d'une HashMap dont les clés sont les noms de fichiers des textures.
+
+Centralisation des actions sur le GameThread dans la View.
+
+Les sous-images des images combinées sont affichées selon leur position propre, relative à l'image principale.
+
+Le LoadingScreen est un Drawable générant une image combinée.
+
+Réorganisation du pattern MVC.
+
+Les images et les rectangles sont clonables.
+
+Version 1.1
+***********
+
+Ajout des chaises.
+
+Nouvelle génération de carte aléatoire, notamment pour la terre.
+
+Ajout des zones d'effet pour les objets.
+
+Ajout du brouillard.
+
+<Aspects techniques>
+
+Possibilité de fixer un délai d'update différent pour chaque instance d'objet.
+
+Les images sont des Drawable.
+
+Les cases génèrent des images combinées, avec superposition de textures.
+
+Ajout des états d'animation INVISIBLE et ACTIVATED.
+
+Version 1.0_02
+**************
+
+Compatibilité avec Mac grâce au remplacement des backslashs par des slashs dans les noms de fichiers.
+
+Version 1.0_01
+**************
+
+Correction apportée au chargement des textures de Poufalouf, afin que les sous-dossiers du dossier Poufalouf ne soient pas envoyés à la fonction loadTextures() du GameThread.
+
+Version 1.0 (THE BEGINNING !)
+***********
+
+L'application génère une carte aléatoire dans laquelle Poufalouf peut se déplacer. Il est possible d'afficher les collisions et les limites des images. La carte aléatoire est composée de citrouilles, de barrières et de hautes herbes. De la terre peut être répartie sur le sol. Un enclos limite la zone accessible au joueur afin de le tenir à l'écart des bords de la carte.
